@@ -1,9 +1,14 @@
 export default (data: Lume.Data, helpers: Lume.Helpers) => (
   <>
-    <h1>HASLV Chip Required</h1>
+    <h1>HASLV Chips Required</h1>
     <a href="imagesTif.zip">Zip of all images in TIF format</a>
     <br />
     <a href="imagesJpg.zip">Zip of all images in JPG format</a>
+    <br />
+    <h3>Total Chips Required =&gt; {data.total}</h3>
+    <a href="./imgs/Bonanza Trail.jpg">40 Bonanza Tail - Label Only</a>
+    <br />
+    <a href="">20 Chip Master - Image TBD</a>
     <br />
     <table>
       <thead>

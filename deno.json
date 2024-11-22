@@ -10,7 +10,7 @@
     "gendata": "deno run --allow-read --allow-write ./scripts/gen_data.ts",
     "rsync": "rsync -a ./output/ bitnami@haslvapp.com:/home/bitnami/htdocs/haslv-chips-required/",
     "scpall": "scp -r ./output/* bitnami@haslvapp.com:~/htdocs/haslv-chips-required",
-    "scp1": "scp ./output/index.html bitnami@haslvapp.com:~/htdocs/haslv-chips-required/index.html"
+    "scp1": "scp ./output/index.html bitnami@haslvapp.com:/home/bitnami/htdocs/haslv-chips-required/index.html"
   },
   "compilerOptions": {
     "types": ["lume/types.ts"],
