@@ -1,0 +1,21 @@
+{
+  "imports": {
+    "lume/": "https://deno.land/x/lume@v2.4.2/"
+  },
+  "tasks": {
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
+    "build": "deno task lume",
+    "serve": "deno task lume -s",
+    "convert": "deno run --allow-read --allow-env --allow-ffi ./scripts/convert.ts",
+    "gendata": "deno run --allow-read --allow-write ./scripts/gen_data.ts",
+    "rsync": "rsync -a ./output/ bitnami@haslvapp.com:/home/bitnami/htdocs/haslv-chips-required/",
+    "scpall": "scp -r ./output/* bitnami@haslvapp.com:~/htdocs/haslv-chips-required",
+    "scp1": "scp ./output/index.html bitnami@haslvapp.com:~/htdocs/haslv-chips-required/index.html"
+  },
+  "compilerOptions": {
+    "types": ["lume/types.ts"],
+    "jsx": "react-jsx",
+    "jsxImportSource": "npm:react",
+    "jsxImportSourceTypes": "npm:@types/react"
+  }
+}
