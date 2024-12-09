@@ -1,10 +1,9 @@
 # Deno Lume Example 1 - HASLV Chips Required
 
-The `_data.js` was create by:
+Run and view the output via:
 
-- `deno test gendata`
-- `mv data.js _data.js`
-- edit with the required quantities
+- `something 1`
+- `something 2`
 
 ## Code History
 
@@ -17,3 +16,9 @@ The code in this repository is based on:
 ```bash
 deno run -A https://lume.land/init.ts
 ```
+
+The `_data.js` was create by:
+
+- `deno test gendata`
+- `mv data.js _data.js`
+- edit with the required quantities

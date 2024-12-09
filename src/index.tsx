@@ -1,21 +1,17 @@
 export default (data: Lume.Data, helpers: Lume.Helpers) => (
   <>
     <h1>HASLV Chips Required</h1>
-    <a href="imagesTif.zip">Zip of all images in TIF format</a>
-    <br />
-    <a href="imagesJpg.zip">Zip of all images in JPG format</a>
-    <br />
-    <h3>Total Chips Required =&gt; {data.total}</h3>
-    <a href="./imgs/Bonanza Trail.jpg">40 Bonanza Tail - Label Only</a>
-    <br />
-    <a href="">20 Chip Master - Image TBD</a>
-    <br />
+    <p>Total Chips {data.total}</p>
+    <p>
+      Back Image <em>Haslv Logo</em>
+    </p>
+    {/* <img src={`./imgs/Haslv Logo.jpg`} width="50" height="50" /> */}
     <table>
       <thead>
         <tr>
           <th>Qty</th>
-          <th>Image</th>
-          <th>Chip</th>
+          <th>Front Image</th>
+          {/* <th>Chip</th> */}
         </tr>
       </thead>
       <tbody>
@@ -23,12 +19,10 @@ export default (data: Lume.Data, helpers: Lume.Helpers) => (
           d.qty ? (
             <tr key={k}>
               <td>{d.qty}</td>
-              <td>
-                <a href={`./imgs/${d.name}`}>
-                  <img src={`./imgs/${d.name}`} width="50" height="50" />
-                </a>
-              </td>
-              <td>{d.name}</td>
+              <td>{d.name.split(".")[0]}</td>
+              {/* <td>
+                <img src={`./imgs/${d.name}`} width="50" height="50" />
+              </td> */}
             </tr>
           ) : null
         )}
