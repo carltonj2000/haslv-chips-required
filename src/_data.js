@@ -1,5 +1,5 @@
 export const images = [
-  { level: 0, color: "Pink", chips: [{ name: "Chip Master.png", qty: 20 }] },
+  { level: 0, color: "Purple", chips: [{ name: "Chip Master.png", qty: 20 }] },
   {
     level: 4,
     color: "Green",
