@@ -1,4 +1,6 @@
 export const images = [
+  { name: "Chip Master.png", qty: 20 },
+  { name: "Anniversary Narrows.png", qty: 40 },
   { name: "Black Mountain.jpg", qty: 0 },
   { name: "Black Velvet.jpg", qty: 0 },
   { name: "Bonanza Trail.jpg", qty: 0 },
