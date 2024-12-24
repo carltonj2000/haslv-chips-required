@@ -416,7 +416,8 @@
     }
   },
   "redirects": {
-    "https://deno.land/std/fs/mod.ts": "https://deno.land/std@0.224.0/fs/mod.ts"
+    "https://deno.land/std/fs/mod.ts": "https://deno.land/std@0.224.0/fs/mod.ts",
+    "https://deno.land/x/deno_fmt/mod.ts": "https://deno.land/x/deno_fmt@0.1.5/mod.ts"
   },
   "remote": {
     "https://deno.land/std@0.170.0/_util/asserts.ts": "d0844e9b62510f89ce1f9878b046f6a57bf88f208a10304aab50efcb48365272",
@@ -600,6 +601,14 @@
     "https://deno.land/x/deno_dom@v0.1.48/src/dom/utils-types.ts": "96db30e3e4a75b194201bb9fa30988215da7f91b380fca6a5143e51ece2a8436",
     "https://deno.land/x/deno_dom@v0.1.48/src/dom/utils.ts": "4c6206516fb8f61f37a209c829e812c4f5a183e46d082934dd14c91bde939263",
     "https://deno.land/x/deno_dom@v0.1.48/src/parser.ts": "e06b2300d693e6ae7564e53dfa5c9a9e97fdb8c044c39c52c8b93b5d60860be3",
+    "https://deno.land/x/deno_fmt@0.1.5/mod.ts": "bb74c57907b77a301cef37236af9de85c2cb0ac75f79a9c60db3208e979f19a8",
+    "https://deno.land/x/deno_fmt@0.1.5/src/context.ts": "baf814994ef5696f8ced9b5d0156b81ec75207e41e989c76b84b87dbe50d6e54",
+    "https://deno.land/x/deno_fmt@0.1.5/src/dprint.ts": "a5ea7261f77998f0e8d5d9e581c6d15afe86aa9ab32af2dccfe4865b008a2774",
+    "https://deno.land/x/deno_fmt@0.1.5/src/fmt.ts": "52941a928918a62c5efe9594b83ed1bf89f324ca132c292695ea17e791315dfa",
+    "https://deno.land/x/deno_fmt@0.1.5/src/helpers.ts": "45da2c3cab4faf8f883bce5b9edd83cde5d80f5f75ca42e41195759b98acbcdf",
+    "https://deno.land/x/deno_fmt@0.1.5/src/lru.ts": "0a22753be042c5ea63dcf830a04e3481a9cded5b755de7b6146be97a36274ffa",
+    "https://deno.land/x/deno_fmt@0.1.5/src/options.ts": "840c13cf1d78255681b91625eb7719b2883f68f4f0f25142f697bf0e57304b02",
+    "https://deno.land/x/deno_fmt@0.1.5/src/sha256.ts": "eea8272cd53072763ad5fa8e632a572676cde41e027485116a8f84a49a669bf8",
     "https://deno.land/x/lume@v2.4.2/cli.ts": "dcdc9d6abc1a219f1b972772ba27be33cebeffebb3db2d82a3f3d752d789a758",
     "https://deno.land/x/lume@v2.4.2/cli/build.ts": "a3acda3c702d6a51a8fe65ea3abc17813deea0db71e442de6120a747f56a2466",
     "https://deno.land/x/lume@v2.4.2/cli/build_worker.ts": "0a829ac3baadabc1c77103e0110429b67a4dc2a781898d21272087d34dc7be74",

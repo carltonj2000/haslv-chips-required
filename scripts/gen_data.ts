@@ -11,19 +11,19 @@ if (existsSync(dstJs)) {
   Deno.exit(1);
 }
 
-const jpgs = [];
+const imgs = [];
 for (const dirEntry of Deno.readDirSync(srcJpg)) {
   if (dirEntry.isFile) {
     const ext = path.extname(dirEntry.name);
-    if (ext === ".jpg") {
-      jpgs.push(dirEntry.name);
+    if (ext === ".jpg" || ext === "*.png") {
+      imgs.push(dirEntry.name);
     }
   }
 }
 
-jpgs.sort((a, b) => (a > b ? 1 : -1));
+imgs.sort((a, b) => (a > b ? 1 : -1));
 const outLines = ["export const images = ["];
-const jpgLines = jpgs.map((jpg) => `{name: "${jpg}", qty: 0}`);
+const jpgLines = imgs.map((jpg) => `{name: "${jpg}", qty: 0}`);
 outLines.push(jpgLines.join(",\n"));
 outLines.push("];");
 Deno.writeTextFileSync(dstJs, outLines.join("\n"));
